@@ -1,0 +1,57 @@
+{
+  "policy_domain": "SAFETY_AND_ESCALATION",
+  "version": "2.0.0",
+  "escalation_triggers": [
+    {
+      "trigger_id": "ESC_PII_SECURITY",
+      "rule_name": "Personal Identifiable Information Protection",
+      "conditions": [
+        "Inquiry requires inspecting account email, username, payment card, or invoice number",
+        "Public Twitter disclosure of private credentials must be avoided"
+      ],
+      "action": "DEFLECT_TO_DM_AND_ESCALATE",
+      "target_queue": "human_support",
+      "dm_message": "Please send us a Direct Message with your account's email address and we'll take a closer look under the hood."
+    },
+    {
+      "trigger_id": "ESC_BILLING_DISPUTE",
+      "rule_name": "Financial Charge Disputes & Refund Requests",
+      "conditions": [
+        "Intent is SUBSCRIPTION_BILLING and user mentions post-cancellation charge, double charge, or refund request"
+      ],
+      "action": "DEFLECT_TO_DM_AND_ESCALATE",
+      "target_queue": "billing_tier2",
+      "dm_message": "Billing and payment details need to stay private. Could you DM us your account email and receipt details so our billing team can assist?"
+    },
+    {
+      "trigger_id": "ESC_ACCOUNT_COMPROMISE",
+      "rule_name": "Account Takeover or Hacking Suspected",
+      "conditions": [
+        "Customer reports unfamiliar email change, unauthorized password reset, or foreign login"
+      ],
+      "action": "URGENT_DM_ESCALATION",
+      "target_queue": "account_security_tier2",
+      "dm_message": "We take account security seriously. Please DM us your registered email address right away so we can secure your account."
+    },
+    {
+      "trigger_id": "ESC_REPEATED_FAILURE",
+      "rule_name": "Exhausted Standard Troubleshooting",
+      "conditions": [
+        "Customer has already executed clean reinstall or cache clearing and issue persists"
+      ],
+      "action": "ESCALATE_TO_TIER2",
+      "target_queue": "technical_support_tier2",
+      "dm_message": "Thanks for trying those steps. Could you DM us your device model, OS version, and Spotify version so our tech specialists can investigate?"
+    },
+    {
+      "trigger_id": "ESC_SAFETY",
+      "rule_name": "Customer Distress & Severe Grievance",
+      "conditions": [
+        "Customer expresses acute frustration, severe profanity, or threatening to delete app"
+      ],
+      "action": "DEFLECT_TO_DM_AND_ESCALATE",
+      "target_queue": "human_support",
+      "dm_message": "We're genuinely sorry for this distressing experience. Please send us a DM so our customer relations team can assist you directly."
+    }
+  ]
+}

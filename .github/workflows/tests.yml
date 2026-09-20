@@ -1,0 +1,54 @@
+name: CI Test Suite and Benchmark
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    name: Run Unit Tests & Benchmark
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Cache Hugging Face Transformers & Sentence Transformers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ runner.os }}-hf-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-hf-
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Full Unit Test Suite (88 Tests)
+        run: |
+          python -m unittest discover -s tests -v
+
+      - name: Run Stage 6A Performance Benchmark
+        run: |
+          python scripts/benchmark_stage6a.py
+
+      - name: Upload Benchmark Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: stage6a-benchmark-artifacts
+          path: |
+            metrics/stage6a_benchmark.json
+            report/stage6a_benchmark.md
+            metrics/pipeline_metrics.json
+            metrics/latency_metrics.json

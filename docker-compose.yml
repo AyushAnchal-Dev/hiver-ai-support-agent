@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  hiver-ai-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hiver-support-agent
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - LLM_PROVIDER=MOCK
+      - OFFLINE_MODE=true
+      - ENABLE_WARMUP=true
+      - PROMPT_VERSION=v1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    volumes:
+      - ./logs:/app/logs
+      - ./metrics:/app/metrics
+    restart: unless-stopped

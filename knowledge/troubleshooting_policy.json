@@ -1,0 +1,65 @@
+{
+  "policy_domain": "TECHNICAL_TROUBLESHOOTING",
+  "version": "2.1.0",
+  "sops": [
+    {
+      "sop_id": "SOP_CLEAN_REINSTALL",
+      "sop_name": "Comprehensive Clean Reinstallation Procedure",
+      "applicable_intents": ["APP_CRASH_TECHNICAL_BUG", "PLAYBACK_STREAMING", "DEVICE_CONNECT_INTEGRATION"],
+      "steps": {
+        "windows": [
+          "Close Spotify and exit from background system tray",
+          "Open Settings -> Apps -> Installed Apps -> Uninstall Spotify",
+          "Press Windows Key + R, type %localappdata% and delete the 'Spotify' folder",
+          "Press Windows Key + R, type %appdata% and delete the 'Spotify' folder",
+          "Restart your computer and download the latest installer from spotify.com/download"
+        ],
+        "mac": [
+          "Quit Spotify and drag Spotify from Applications to Trash",
+          "In Finder, click Go -> Go to Folder and enter ~/Library/Application Support",
+          "Delete the Spotify folder, empty Trash, and restart Mac",
+          "Re-download from spotify.com/download"
+        ],
+        "mobile": [
+          "Go to device Settings -> Apps -> Spotify -> Storage -> Clear Data and Clear Cache",
+          "Uninstall the Spotify app and restart phone",
+          "Reinstall the latest build from Google Play Store or Apple App Store"
+        ]
+      }
+    },
+    {
+      "sop_id": "SOP_CLEAR_CACHE",
+      "sop_name": "Application Cache Clearing (Without Deleting App)",
+      "applicable_intents": ["OFFLINE_DOWNLOAD_SYNC", "APP_CRASH_TECHNICAL_BUG", "PLAYBACK_STREAMING"],
+      "steps": [
+        "Open the Spotify app",
+        "Tap the Settings (gear icon) in the top right corner",
+        "Scroll down to the 'Storage' section",
+        "Tap 'Clear cache' and confirm",
+        "Note: Cleared cache frees device storage while retaining your downloaded offline playlists"
+      ]
+    },
+    {
+      "sop_id": "SOP_CONNECT_PAIRING",
+      "sop_name": "Spotify Connect & Smart Speaker Disconnection Cycle",
+      "applicable_intents": ["DEVICE_CONNECT_INTEGRATION"],
+      "steps": [
+        "Verify both phone and speaker are on the same 2.4GHz or 5GHz WiFi frequency",
+        "Restart your router and power-cycle the smart speaker (unplug for 30 seconds)",
+        "In the Alexa / Google Home app, disable the Spotify skill and re-enable it",
+        "Open Spotify -> Devices Available icon -> select your speaker"
+      ]
+    },
+    {
+      "sop_id": "SOP_SIGN_OUT_EVERYWHERE",
+      "sop_name": "Remote Session Termination",
+      "applicable_intents": ["ACCOUNT_ACCESS_AUTH", "PLAYBACK_STREAMING"],
+      "steps": [
+        "Go to spotify.com/account on a desktop or mobile browser",
+        "Scroll to the bottom of the Account Overview page",
+        "Click the 'Sign out everywhere' button",
+        "Wait 5 minutes and log back into your primary device"
+      ]
+    }
+  ]
+}

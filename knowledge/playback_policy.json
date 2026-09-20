@@ -1,0 +1,47 @@
+{
+  "policy_domain": "PLAYBACK_STREAMING",
+  "version": "1.8.0",
+  "rules": [
+    {
+      "policy_id": "POL_PLAY_01",
+      "rule_name": "Streaming Stutter, Buffering & Random Pauses",
+      "escalation_required": false,
+      "target_queue": null,
+      "dm_required": false,
+      "description": "Music stutters, stops after a few seconds, or pauses when screen locks or during playback.",
+      "troubleshooting_sequence": [
+        "Check network stability: toggle WiFi or test playback over cellular data",
+        "On Desktop: disable 'Hardware Acceleration' under Spotify Settings -> Advanced Settings",
+        "On Mobile: verify Spotify is not set to 'Battery Optimization' or restricted in Background App Refresh",
+        "Log out of Spotify, reboot device, and log back in to clear cache session"
+      ]
+    },
+    {
+      "policy_id": "POL_PLAY_02",
+      "rule_name": "Sound Output & Audio Device Routing",
+      "escalation_required": false,
+      "target_queue": null,
+      "dm_required": false,
+      "description": "Track plays on scrubber bar but no audio comes out of speakers or headphones.",
+      "troubleshooting_sequence": [
+        "Check device volume and system sound output preferences",
+        "Toggle Spotify Connect icon at bottom right to verify correct active playback speaker",
+        "Disconnect/reconnect Bluetooth or headphone jack",
+        "Restart Spotify client to release locked audio drivers"
+      ]
+    },
+    {
+      "policy_id": "POL_PLAY_03",
+      "rule_name": "Multiple Device Playback Conflicts",
+      "escalation_required": false,
+      "target_queue": null,
+      "dm_required": false,
+      "description": "Playback pauses because another device started streaming on the same account.",
+      "troubleshooting_sequence": [
+        "Individual Premium accounts only support single-stream playback at one time",
+        "If you suspect unauthorized streaming, visit spotify.com/account and click 'Sign out everywhere'",
+        "Update account password immediately after signing out"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "policy_domain": "SUBSCRIPTION_BILLING",
+  "version": "2.4.0",
+  "rules": [
+    {
+      "policy_id": "POL_BILL_01",
+      "rule_name": "Post-Cancellation Charges, Unexpected Downgrade & Refund Inquiries",
+      "escalation_required": true,
+      "target_queue": "billing_tier2",
+      "dm_required": true,
+      "description": "Customer claims they were billed after cancelling, unexpectedly dropped from Premium to Free, or requests a refund.",
+      "mandatory_instruction": "Acknowledge payment concern empathetically, inform customer that financial details must remain private, request Direct Message with account email address and receipt date, and escalate to billing tier 2.",
+      "prohibited_actions": [
+        "Never promise an instant refund in a public response",
+        "Never ask for credit card numbers, CVV, or passwords in tweets or DMs",
+        "Never dispute user claim publicly without private account lookup"
+      ]
+    },
+    {
+      "policy_id": "POL_BILL_02",
+      "rule_name": "Double Billing & Temporary Bank Authorizations",
+      "escalation_required": true,
+      "target_queue": "billing_tier2",
+      "dm_required": true,
+      "description": "Customer observes two identical charges in the same billing cycle.",
+      "mandatory_instruction": "Clarify that duplicate pending charges often reflect temporary authorization holds that expire within 48-72h. If two charges cleared, request DM with account email to inspect duplicate active accounts.",
+      "prohibited_actions": [
+        "Never ask user to post bank statements publicly"
+      ]
+    },
+    {
+      "policy_id": "POL_BILL_03",
+      "rule_name": "Subscription Tier Changes & Student / Family Plans",
+      "escalation_required": false,
+      "target_queue": null,
+      "dm_required": false,
+      "description": "Customer inquires about plan pricing, student SheerID verification, or Family plan address verification.",
+      "mandatory_instruction": "Explain plan prerequisites: all Family plan members must reside at the same physical address; Student plans require SheerID re-verification every 12 months (up to 4 years). Direct to spotify.com/account.",
+      "prohibited_actions": [
+        "Do not bypass SheerID verification requirements"
+      ]
+    },
+    {
+      "policy_id": "POL_BILL_04",
+      "rule_name": "Third-Party Billing Provider (Apple / Google / Carrier)",
+      "escalation_required": false,
+      "target_queue": null,
+      "dm_required": false,
+      "description": "Customer pays for Spotify through Apple iTunes App Store, Google Play, or mobile telecommunications carrier.",
+      "mandatory_instruction": "Clarify that Spotify cannot directly cancel or refund subscriptions managed by third-party platforms. Instruct customer to manage subscriptions directly via device settings (Apple Subscriptions or Google Play Subscriptions).",
+      "prohibited_actions": [
+        "Do not attempt direct Spotify cancellation for Apple-managed billing"
+      ]
+    }
+  ]
+}

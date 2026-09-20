@@ -1,0 +1,4064 @@
+[
+  {
+    "example_id": "EX_006",
+    "customer_message": "@customer when are you guys coming to Kenya? Tired of telling my friend in the US to login for me every 14 days.",
+    "ground_truth_intent": "ACCOUNT_ACCESS_AUTH",
+    "predicted_intent": "ACCOUNT_ACCESS_AUTH",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T199189-Turn1",
+        "thread_id": "199189",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer when are you guys coming to Kenya? Tired of telling my friend in the US to login for me every 14 days.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T199189-Turn2",
+        "thread_id": "199189",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi! We're launching in new countries as often as possible. Be sure to add your email at <LINK:URL> /GK",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1571912-Turn1",
+        "thread_id": "1571912",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Help! I can't login to my account. Says I can only use it abroad for 14 days... but I will be staying here for a year.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1571912-Turn2",
+        "thread_id": "1571912",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! We've just sent you a bit more info over DM. We'll carry on helping out there /NY",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2251442-Turn1",
+        "thread_id": "2251442",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "i got logged out of my account & when i tried to log in, it says, \"Enjoying your trip? To listen abroad for more than 14 days, tell us where you are at <LINK:URL> SEND HELP i need my music \ud83d\ude2d @SpotifyCares",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2251442-Turn2",
+        "thread_id": "2251442",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi Nat! Can you send us a DM with your username or email address? We'll take a look under the hood /HR <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2198156-Turn1",
+        "thread_id": "2198156",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares I logged out of my acc and when I went to log in again it said I couldn't because I can only use abroad 14 days? I'm home now?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2198156-Turn2",
+        "thread_id": "2198156",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you DM us your account's email address? We'll take a look /RB <LINK:URL>",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_ACC_01",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hey there! Traveling abroad can sometimes affect account access, but we've got you covered. If you're traveling abroad on a Free account, listening is available for up to 14 days outside your registered country. You can update your country settings in your account profile at spotify.com/account or upgrade to Spotify Premium for unrestricted international playback. Let us know how you get on! /SpotifyCares [Citations: Thread #1571912, Thread #199189, Policy ART_ACC_01, Policy SOP_SIGN_OUT_EVERYWHERE]",
+    "confidence": 0.9295,
+    "citations": [
+      "Thread #1571912",
+      "Thread #199189",
+      "Policy ART_ACC_01",
+      "Policy SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "LINK_REDIRECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Traveling abroad can sometimes affect account access, but we've got you covered.",
+      "If you're traveling abroad on a Free account, listening is available for up to 14 days outside your registered country.",
+      "You can update your country settings in your account profile at spotify.com/account or upgrade to Spotify Premium for unrestricted international playback.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Traveling abroad can sometimes affect account access, but we've got you covered.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "If you're traveling abroad on a Free account, listening is available for up to 14 days outside your registered country.",
+        "claim_type": "policy_claim",
+        "source": "ART_ACC_01"
+      },
+      {
+        "claim": "You can update your country settings in your account profile at spotify.com/account or upgrade to Spotify Premium for unrestricted international playback.",
+        "claim_type": "policy_claim",
+        "source": "ART_ACC_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_015",
+    "customer_message": "@customer @customer trying to connect my accounts and it says login unavailable or page not found. Help! <LINK:URL>",
+    "ground_truth_intent": "ACCOUNT_ACCESS_AUTH",
+    "predicted_intent": "ACCOUNT_ACCESS_AUTH",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1913623-Turn1",
+        "thread_id": "1913623",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer @customer trying to connect my accounts and it says login unavailable or page not found. Help! <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1913623-Turn2",
+        "thread_id": "1913623",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Sommer, that's not cool. Can you send us your account's email address or username via DM? We'll take a look backstage /JE <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1840423-Turn1",
+        "thread_id": "1840423",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I can't login because it says I'm not connected but I can't connect because I'm not logged in",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1840423-Turn3",
+        "thread_id": "1840423",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey! Can you DM us your account's username and email address? A screenshot of the exact message you're getting might also help /JL <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2029002-Turn1",
+        "thread_id": "2029002",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I am unable to login to my account? Tried resetting, it even had my profile name like I was already logged in at the top. Help!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2029002-Turn2",
+        "thread_id": "2029002",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, help's arrived! Could you send us a DM with your account's email address? We'll take a look backstage /CH <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1838914-Turn1",
+        "thread_id": "1838914",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Why can't I login to my account? App connects to Facebook then says \"login failed\" and website redirects and won't load",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2027432-Turn1",
+        "thread_id": "2027432",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer trying to login on desktop and I am getting 404 errors. Happens across browsers.",
+        "snippet_type": "symptom"
+      }
+    ],
+    "matched_policies": [
+      "ART_ACC_01",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hi there! Getting locked out of your account is a hassle, but we've got steps to get you back in. Let us know how you get on! /SpotifyCares [Citations: Thread #1838914, Thread #1840423, Policy ART_ACC_01, Policy SOP_SIGN_OUT_EVERYWHERE]",
+    "confidence": 0.8792,
+    "citations": [
+      "Thread #1838914",
+      "Thread #1840423",
+      "Policy ART_ACC_01",
+      "Policy SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 0.8,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hi there!",
+      "Getting locked out of your account is a hassle, but we've got steps to get you back in.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [
+      "Could you check your login credentials, test logging in via the Spotify Web Player, disable any active VPNs, and try clearing your browser or app cache?"
+    ],
+    "unsupported_claims_before": [
+      "Could you check your login credentials, test logging in via the Spotify Web Player, disable any active VPNs, and try clearing your browser or app cache?"
+    ],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hi there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Getting locked out of your account is a hassle, but we've got steps to get you back in.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you check your login credentials, test logging in via the Spotify Web Player, disable any active VPNs, and try clearing your browser or app cache?",
+        "claim_type": "unsupported_claim",
+        "source": "none"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": true
+  },
+  {
+    "example_id": "EX_019",
+    "customer_message": "Anyone working @SpotifyCares today!! Can't use account but your still taking my coin",
+    "ground_truth_intent": "ACCOUNT_ACCESS_AUTH",
+    "predicted_intent": "ACCOUNT_ACCESS_AUTH",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1145287-Turn1",
+        "thread_id": "1145287",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Anyone working @SpotifyCares today!! Can't use account but your still taking my coin",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1145287-Turn2",
+        "thread_id": "1145287",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! We've just sent you a DM \ud83d\ude42 Let's carry on chatting there /RV",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2917959-Turn1",
+        "thread_id": "2917959",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hello @SpotifyCares , someone's using my account whom I didn't know (I'm in premium). I already logged out all devices and changed my password but still the user is still there. I hope you can help me regarding this issue. Thanks!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2917959-Turn2",
+        "thread_id": "2917959",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, help's here! Can you DM us your account's username and email address? We'll do some digging \ud83d\udd0d /TR <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T453453-Turn1",
+        "thread_id": "453453",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "My account isn\u2019t working?? @SpotifyCares",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T453453-Turn3",
+        "thread_id": "453453",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey Julie! We'll help out. Can you DM us your account's email address? We'll take a look under the hood /AN <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1939988-Turn1",
+        "thread_id": "1939988",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares, you have payment authentication problems. You've had this for at least 24 hours.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1939988-Turn3",
+        "thread_id": "1939988",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey there! Could you DM us your Spotify account's email address? Also, what exactly is going on with your Spotify? We'll help you out /BH <LINK:URL>",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_ACC_01",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hi there! Getting locked out of your account is a hassle, but we've got steps to get you back in. Let us know how you get on! /SpotifyCares [Citations: Thread #1145287, Thread #1939988, Policy ART_ACC_01, Policy SOP_SIGN_OUT_EVERYWHERE]",
+    "confidence": 0.7507,
+    "citations": [
+      "Thread #1145287",
+      "Thread #1939988",
+      "Policy ART_ACC_01",
+      "Policy SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 0.8,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hi there!",
+      "Getting locked out of your account is a hassle, but we've got steps to get you back in.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [
+      "Could you check your login credentials, test logging in via the Spotify Web Player, disable any active VPNs, and try clearing your browser or app cache?"
+    ],
+    "unsupported_claims_before": [
+      "Could you check your login credentials, test logging in via the Spotify Web Player, disable any active VPNs, and try clearing your browser or app cache?"
+    ],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hi there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Getting locked out of your account is a hassle, but we've got steps to get you back in.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you check your login credentials, test logging in via the Spotify Web Player, disable any active VPNs, and try clearing your browser or app cache?",
+        "claim_type": "unsupported_claim",
+        "source": "none"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": true
+  },
+  {
+    "example_id": "EX_026",
+    "customer_message": "My account was charged after I cancelled Premium last month. What\u2019s up? @SpotifyCares",
+    "ground_truth_intent": "SUBSCRIPTION_BILLING",
+    "predicted_intent": "SUBSCRIPTION_BILLING",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T699499-Turn1",
+        "thread_id": "699499",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "My account was charged after I cancelled Premium last month. What\u2019s up? @SpotifyCares",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T699499-Turn2",
+        "thread_id": "699499",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there, that's not cool! Could you shoot us a DM with your account's username and email address? We'll take a look backstage /VK <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2410567-Turn1",
+        "thread_id": "2410567",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Yo @customer I cancelled my premium account last month why was I charged again for this month \ud83d\ude12",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2410567-Turn2",
+        "thread_id": "2410567",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Madison! Can you DM us your username or email address? We'll take a look under the hood /NH <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2957834-Turn1",
+        "thread_id": "2957834",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I have cancelled my premium membership last month but still got charged this month. I was told that my premium would end on the 27th November but on the 27th November I have been charged and am on free",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2957834-Turn2",
+        "thread_id": "2957834",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Dave, that doesn't sound right! Can you DM us your account's username/email address? We'll take a look backstage /JP <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2082581-Turn1",
+        "thread_id": "2082581",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares i cancelled my premium on 9/26 and was just charged today. need groceries! What's the deal? #help #customerservice",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2082581-Turn2",
+        "thread_id": "2082581",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, we're here to help! Could you send us a DM with your account's email address or username? We'll take a look backstage /CO <LINK:URL>",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_BILL_01",
+      "POL_BILL_01"
+    ],
+    "response": "Hey there! We know billing concerns after a cancellation can be frustrating, and we're here to help get this sorted. Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist. You can also review your active subscriptions anytime at https://support.spotify.com/article/subscription-billing/ Let us know how you get on! /SpotifyCares [Citations: Thread #2082581, Thread #2410567, Policy ART_BILL_01, Policy POL_BILL_01]",
+    "confidence": 0.969,
+    "citations": [
+      "Thread #2082581",
+      "Thread #2410567",
+      "Policy ART_BILL_01",
+      "Policy POL_BILL_01"
+    ],
+    "escalation_required": true,
+    "target_queue": "billing_tier2",
+    "resolution_type": "DM_DEFLECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "We know billing concerns after a cancellation can be frustrating, and we're here to help get this sorted.",
+      "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+      "You can also review your active subscriptions anytime at https://support.spotify.com/article/subscription-billing/ Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We know billing concerns after a cancellation can be frustrating, and we're here to help get this sorted.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can also review your active subscriptions anytime at https://support.spotify.com/article/subscription-billing/ Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_035",
+    "customer_message": "@customer My account changed from premium to free. Why? I have nothing changed in my connection, no problems with my bank (i am member of the bank), no new smartphone, really nothing. Problems?",
+    "ground_truth_intent": "SUBSCRIPTION_BILLING",
+    "predicted_intent": "SUBSCRIPTION_BILLING",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2488854-Turn1",
+        "thread_id": "2488854",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer My account changed from premium to free. Why? I have nothing changed in my connection, no problems with my bank (i am member of the bank), no new smartphone, really nothing. Problems?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2488854-Turn2",
+        "thread_id": "2488854",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Michael! Can you DM us your account's email address? We'll take a look backstage /SJ <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2752813-Turn1",
+        "thread_id": "2752813",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares My Spotify account on the phone app has now turned to a free account, when I have a premium? As well, I am unable to log onto my account on my desktop device? I do not know what has cause me to be logged out and suddenly changed to a free account",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T689587-Turn1",
+        "thread_id": "689587",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I updated my account to premium yesterday, the payment is on the credit card plus my account remains free what may have happened?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2794535-Turn1",
+        "thread_id": "2794535",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer my account settings have switched from premium to free without my prior intruction or consent. What\u2019s going on?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T392713-Turn1",
+        "thread_id": "392713",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Issue was fixed but now re-started. My account shows as free account although I pay for premium. Why does it keep doing this? <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T392713-Turn2",
+        "thread_id": "392713",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer We've just sent you a DM \ud83d\ude42 /SU",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_BILL_01",
+      "POL_BILL_01"
+    ],
+    "response": "Hi there! Payment questions can definitely be stressful, so let's check on your subscription status. Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist. You can also review your active subscriptions anytime at https://support.spotify.com/article/subscription-billing/ Let us know how you get on! /SpotifyCares [Citations: Thread #2488854, Thread #2752813, Policy ART_BILL_01, Policy POL_BILL_01]",
+    "confidence": 0.8669,
+    "citations": [
+      "Thread #2488854",
+      "Thread #2752813",
+      "Policy ART_BILL_01",
+      "Policy POL_BILL_01"
+    ],
+    "escalation_required": true,
+    "target_queue": "billing_tier2",
+    "resolution_type": "DM_DEFLECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hi there!",
+      "Payment questions can definitely be stressful, so let's check on your subscription status.",
+      "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+      "You can also review your active subscriptions anytime at https://support.spotify.com/article/subscription-billing/ Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hi there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Payment questions can definitely be stressful, so let's check on your subscription status.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can also review your active subscriptions anytime at https://support.spotify.com/article/subscription-billing/ Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_039",
+    "customer_message": "@SpotifyCares why I can't see radio option on my desktop and iOS app but it shows in Web player? PC/iPhone 7 iOS11/Premium/Thai region",
+    "ground_truth_intent": "SUBSCRIPTION_BILLING",
+    "predicted_intent": "SUBSCRIPTION_BILLING",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1324009-Turn1",
+        "thread_id": "1324009",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares why I can't see radio option on my desktop and iOS app but it shows in Web player? PC/iPhone 7 iOS11/Premium/Thai region",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1324009-Turn2",
+        "thread_id": "1324009",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there! Can you let us know the Spotify version you're using? We'll see what we can do for you /NY",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2239810-Turn1",
+        "thread_id": "2239810",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Is my queue on Mac/PC gone forever or is it available with Premium only?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2239810-Turn2",
+        "thread_id": "2239810",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! The Play Queue should still be available for the desktop app. Check this page out for more info: <LINK:URL> /QI",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2380897-Turn1",
+        "thread_id": "2380897",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares I have Spotify premium on my iPhone. I want to listen to my music on my pc but when I tape devices available as instructed on my phone I don't see anything about my pc it just goes to the page Connect to a device. Can you help me with this?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2380897-Turn2",
+        "thread_id": "2380897",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Lyn! Can you DM us your account's email address or username? We'll take a look /NS <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1902007-Turn1",
+        "thread_id": "1902007",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer How about letting premium users have the queue function on their web player? Can't have the app on my work desktop #queuethetunes",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1902007-Turn2",
+        "thread_id": "1902007",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! We don't have more info to share at the moment, but you can help make it happen by showing your support at <LINK:URL> /MG",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_BILL_01",
+      "POL_BILL_03"
+    ],
+    "response": "Hi there! Payment questions can definitely be stressful, so let's check on your subscription status. Log in to your account page at spotify.com/account to verify active subscription status Let us know how you get on! /SpotifyCares [Citations: Thread #1324009, Thread #1902007, Policy ART_BILL_01, Policy POL_BILL_03]",
+    "confidence": 0.7549,
+    "citations": [
+      "Thread #1324009",
+      "Thread #1902007",
+      "Policy ART_BILL_01",
+      "Policy POL_BILL_03"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "SELF_SERVE",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hi there!",
+      "Payment questions can definitely be stressful, so let's check on your subscription status.",
+      "Log in to your account page at spotify.com/account to verify active subscription status Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hi there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Payment questions can definitely be stressful, so let's check on your subscription status.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Log in to your account page at spotify.com/account to verify active subscription status Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_046",
+    "customer_message": "@customer I can't get spotify to play any songs. I was playing one, tried to skip it but then it just wouldn't play any songs at all.",
+    "ground_truth_intent": "PLAYBACK_STREAMING",
+    "predicted_intent": "PLAYBACK_STREAMING",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1903596-Turn1",
+        "thread_id": "1903596",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer i just downloaded spotify again & it won't let me play my playlist??? it just makes me press shuffle play",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1903596-Turn3",
+        "thread_id": "1903596",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey, help's here! Can you tell us what device, operating system, and Spotify version you're using? We'll see what we can suggest /CH",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1672785-Turn1",
+        "thread_id": "1672785",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Seems to be glitching again. Songs run time continues to \"play\" but no music is heard. Can't change to a different song or playlist, nothing works. :( <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1672785-Turn2",
+        "thread_id": "1672785",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you let us know what device, operating system, and browser you're using? Also, when did this issue start happening exactly? /LM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T848521-Turn1",
+        "thread_id": "848521",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I cant play certain songs on spotify that other users can play. What gives? Songs not grayed out so i should be able to play it <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T848521-Turn2",
+        "thread_id": "848521",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Nicholas! What happens when you try to play them? Do you get any specific error messages? We'll lend a hand /MV",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1118825-Turn1",
+        "thread_id": "1118825",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares My Spotify won't play any of my albums, I've already tried logging out of my Spotify multiple times and restarting my phone.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1118825-Turn2",
+        "thread_id": "1118825",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there. Don't worry, help's here. Can you tell us what device, operating system, and app version you're using? /JU",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_PLAY_01",
+      "POL_PLAY_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hey there! That playback glitch doesn't sound right at all. Let's troubleshoot this together. Could you try these quick diagnostic steps? (1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token. Let us know how you get on! /SpotifyCares [Citations: Thread #1118825, Thread #1672785, Policy ART_PLAY_01, Policy POL_PLAY_01]",
+    "confidence": 0.9068,
+    "citations": [
+      "Thread #1118825",
+      "Thread #1672785",
+      "Policy ART_PLAY_01",
+      "Policy POL_PLAY_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "That playback glitch doesn't sound right at all.",
+      "Let's troubleshoot this together.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "That playback glitch doesn't sound right at all.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's troubleshoot this together.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+        "claim_type": "policy_claim",
+        "source": "ART_PLAY_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_055",
+    "customer_message": "@customer station \"This is Ron Pope\" ... doesn't play any of @customer's new album, \"Work.\" <eye roll> It's just too great to overlook!",
+    "ground_truth_intent": "PLAYBACK_STREAMING",
+    "predicted_intent": "PLAYBACK_STREAMING",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T744383-Turn1",
+        "thread_id": "744383",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer station \"This is Ron Pope\" ... doesn't play any of @customer's new album, \"Work.\" <eye roll> It's just too great to overlook!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T744383-Turn2",
+        "thread_id": "744383",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there! Can you tell us the device, operating system, and Spotify version you're rocking? We'll see what we can suggest /JM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T925941-Turn1",
+        "thread_id": "925941",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares when I search for Mastodon and then choose Crack The Skye album (shuffle play), it doesn't work. Am I the only one?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T925941-Turn2",
+        "thread_id": "925941",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer 1: Hey Alex, help's here! We haven't had any reports so far. Can you let us know the device, OS, and Spotify...",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2545886-Turn1",
+        "thread_id": "2545886",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "How do I tell @customer to not play album radio after an album is finished?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2545886-Turn2",
+        "thread_id": "2545886",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! It sounds like the Autoplay feature is switched on. Having the feature enabled means that once you finish the album/playlist a radio station based on the album/playlist will start. Here's our guide on how to switch it off: <LINK:URL> /RC",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2119212-Turn1",
+        "thread_id": "2119212",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Also, @customer can you please add a sleep timer function so my music doesn\u2019t play for 6 straight hours/until my phone dies on a red eye? \u2708\ufe0f\ud83d\ude34",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2119212-Turn2",
+        "thread_id": "2119212",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, a sleep timer is a great idea! Help make it happen by adding support here: <LINK:URL> /NS",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_PLAY_01",
+      "POL_PLAY_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hey there! That playback glitch doesn't sound right at all. Let's troubleshoot this together. Could you try these quick diagnostic steps? (1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token. Let us know how you get on! /SpotifyCares [Citations: Thread #2119212, Thread #2545886, Policy ART_PLAY_01, Policy POL_PLAY_01]",
+    "confidence": 0.8293,
+    "citations": [
+      "Thread #2119212",
+      "Thread #2545886",
+      "Policy ART_PLAY_01",
+      "Policy POL_PLAY_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "That playback glitch doesn't sound right at all.",
+      "Let's troubleshoot this together.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "That playback glitch doesn't sound right at all.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's troubleshoot this together.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+        "claim_type": "policy_claim",
+        "source": "ART_PLAY_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_059",
+    "customer_message": "@SpotifyCares @customer you say \"Stream the new playlist video\" BUT HOW. Nothing happens when I play the song ... it's just the audio #Canada <LINK:URL>",
+    "ground_truth_intent": "PLAYBACK_STREAMING",
+    "predicted_intent": "PLAYBACK_STREAMING",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1226746-Turn1",
+        "thread_id": "1226746",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares @customer you say \"Stream the new playlist video\" BUT HOW. Nothing happens when I play the song ... it's just the audio #Canada <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1226746-Turn3",
+        "thread_id": "1226746",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey there, we hear you \ud83c\udfa7 Rest assured, your feedback will be passed on to the right folks /CG",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T172537-Turn1",
+        "thread_id": "172537",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hmmm. @customer seems to be glitching - refuses to play anything that isn't on a playlist. @SpotifyCares",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T172537-Turn2",
+        "thread_id": "172537",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! What device, operating system, and Spotify version are you using? We'll see what we can suggest /RB",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1672785-Turn1",
+        "thread_id": "1672785",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Seems to be glitching again. Songs run time continues to \"play\" but no music is heard. Can't change to a different song or playlist, nothing works. :( <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1672785-Turn2",
+        "thread_id": "1672785",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you let us know what device, operating system, and browser you're using? Also, when did this issue start happening exactly? /LM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T839239-Turn1",
+        "thread_id": "839239",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I am not able to play any songs by The National, Arcade Fire, or Wilco on my Spotify mobile app. Please help.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T839239-Turn2",
+        "thread_id": "839239",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, help's here! Just to check, are you getting any error messages when trying to play songs by those artists? /RK",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_PLAY_01",
+      "POL_PLAY_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hey there! That playback glitch doesn't sound right at all. Let's troubleshoot this together. Could you try these quick diagnostic steps? (1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token. Let us know how you get on! /SpotifyCares [Citations: Thread #1226746, Thread #1672785, Policy ART_PLAY_01, Policy POL_PLAY_01]",
+    "confidence": 0.8004,
+    "citations": [
+      "Thread #1226746",
+      "Thread #1672785",
+      "Policy ART_PLAY_01",
+      "Policy POL_PLAY_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "That playback glitch doesn't sound right at all.",
+      "Let's troubleshoot this together.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "That playback glitch doesn't sound right at all.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's troubleshoot this together.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+        "claim_type": "policy_claim",
+        "source": "ART_PLAY_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_060",
+    "customer_message": "@customer you really need to work on your Alexa integration. I would say you get ~ 20% of the songs right the first time. I mean, what song do you think I want when I say \u201cPlay Happy\u201d?",
+    "ground_truth_intent": "DEVICE_CONNECT_INTEGRATION",
+    "predicted_intent": "PLAYBACK_STREAMING",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2310140-Turn1",
+        "thread_id": "2310140",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer you really need to work on your Alexa integration. I would say you get ~ 20% of the songs right the first time. I mean, what song do you think I want when I say \u201cPlay Happy\u201d?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2310140-Turn2",
+        "thread_id": "2310140",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! The cavalry's here. Could you tell us more about what's happening? We'll see what we can suggest /KB",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2786315-Turn1",
+        "thread_id": "2786315",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hmm, having problems with @customer and @customer. Alexa is unable to play any artist, \"Cannot find songs by x\". Playlists work fine. Any suggestions?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2786315-Turn2",
+        "thread_id": "2786315",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer What phrase are you using with Alexa? Regards,",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2306942-Turn1",
+        "thread_id": "2306942",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "\u201cAlexa, play @customer\u201d \u2018Alexa plays random sweary rap song\u2019 Me: \ud83e\udd26\u200d\u2642\ufe0f\u201dWhy Alexa?\u201d @customer @SpotifyCares @customer",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2306942-Turn2",
+        "thread_id": "2306942",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you let us know your operating system and Spotify version? We'll see what we can suggest /MG",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2878324-Turn1",
+        "thread_id": "2878324",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Instant access to millions of songs.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2878324-Turn3",
+        "thread_id": "2878324",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey Jana, we sure do! You can read all about it at <LINK:URL> /JO",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_PLAY_01",
+      "POL_PLAY_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE",
+      "SOP_SIGN_OUT_EVERYWHERE"
+    ],
+    "response": "Hey there! That playback glitch doesn't sound right at all. Let's troubleshoot this together. Could you try these quick diagnostic steps? (1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token. Let us know how you get on! /SpotifyCares [Citations: Thread #2306942, Thread #2310140, Policy ART_PLAY_01, Policy POL_PLAY_01]",
+    "confidence": 0.8153,
+    "citations": [
+      "Thread #2306942",
+      "Thread #2310140",
+      "Policy ART_PLAY_01",
+      "Policy POL_PLAY_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "That playback glitch doesn't sound right at all.",
+      "Let's troubleshoot this together.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "That playback glitch doesn't sound right at all.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's troubleshoot this together.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Check your internet connection and toggle WiFi off and on (2) Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings) (3) Log out and log back in to refresh your streaming session token.",
+        "claim_type": "policy_claim",
+        "source": "ART_PLAY_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_066",
+    "customer_message": "@SpotifyCares it is extremely annoying that every couple weeks the app un-downloads all of my music and I have to re-download EVERYTHING.",
+    "ground_truth_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "predicted_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1221301-Turn1",
+        "thread_id": "1221301",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares it is extremely annoying that every couple weeks the app un-downloads all of my music and I have to re-download EVERYTHING.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1221301-Turn2",
+        "thread_id": "1221301",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer 1: Hey there, sorry to hear that! Check out the steps under \u201cDownloads unexpectedly removed\u201d...",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1894266-Turn1",
+        "thread_id": "1894266",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares it's BEYOND frustrating that my music keeps wiping itself and not being downloaded every few weeks. I don't want to have to... <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1832750-Turn1",
+        "thread_id": "1832750",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "OH COOL @SpotifyCares app has removed all of my downloaded albums again; as it is wont to do every couple of months. RIP internet connection",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1832750-Turn2",
+        "thread_id": "1832750",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Sorry to hear that! Check out the steps under \u201cDownloads unexpectedly removed\u201d at <LINK:URL> They should help with this /DV",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T496153-Turn1",
+        "thread_id": "496153",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Every month, my @customer app dumps 15 GB of downloaded playlists and forces me to download all of it again. This is the last time. Fix your shitty app before you lose another 3 year+ Premium subscriber to @customer",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1973018-Turn1",
+        "thread_id": "1973018",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer pretty much twice a week all my offline music goes back to needing to download again! How can I sort this? It's very annoying",
+        "snippet_type": "symptom"
+      }
+    ],
+    "matched_policies": [
+      "ART_OFF_01",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey there! Offline listening should be seamless. Let's see why your downloads aren't cooperating. Could you try these quick diagnostic steps? (1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache. Let us know how you get on! /SpotifyCares [Citations: Thread #1221301, Thread #1832750, Policy ART_OFF_01, Policy SOP_CLEAR_CACHE]",
+    "confidence": 0.9725,
+    "citations": [
+      "Thread #1221301",
+      "Thread #1832750",
+      "Policy ART_OFF_01",
+      "Policy SOP_CLEAR_CACHE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Offline listening should be seamless.",
+      "Let's see why your downloads aren't cooperating.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Offline listening should be seamless.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's see why your downloads aren't cooperating.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+        "claim_type": "policy_claim",
+        "source": "ART_OFF_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_075",
+    "customer_message": "@SpotifyCares Hi, my Spotify account's been stuck in offline mode for days even though my laptop's constantly connected to wifi, could you help me look through this issue? Thank you :-) <LINK:URL>",
+    "ground_truth_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "predicted_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T475211-Turn1",
+        "thread_id": "475211",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Hi, my Spotify account's been stuck in offline mode for days even though my laptop's constantly connected to wifi, could you help me look through this issue? Thank you :-) <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T475211-Turn2",
+        "thread_id": "475211",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, help's here! Can you DM us your account's email address? We'll take a look backstage /JN <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1980982-Turn1",
+        "thread_id": "1980982",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares my downloaded songs are buffering when I'm connected to wifi. What can I do?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1980982-Turn2",
+        "thread_id": "1980982",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Aleezah! What device and Spotify version are you using? Also, is your Spotify in Offline Mode? We'll see what we can suggest /BH",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2382579-Turn1",
+        "thread_id": "2382579",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer on my desktop says offline for 2 days but I\ufe0f have WiFi and it\u2019s not checked for offline under file. Even uninstalled and reinstalled..... <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2382579-Turn2",
+        "thread_id": "2382579",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, help's here! Can you let us know the model, operating system, and Spotify version of your device? We'll see what we can suggest /PL",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1914609-Turn1",
+        "thread_id": "1914609",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Nopastanoparty. It keeps saying I am offline to go online to connect but my mac is connected",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1914609-Turn2",
+        "thread_id": "1914609",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! Can you let us know which Android & Spotify version you're using? Does logging out, restarting your phone, & logging back in help? /YM",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_OFF_01",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey there! Offline listening should be seamless. Let's see why your downloads aren't cooperating. Could you try these quick diagnostic steps? (1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache. Let us know how you get on! /SpotifyCares [Citations: Thread #1914609, Thread #1980982, Policy ART_OFF_01, Policy SOP_CLEAR_CACHE]",
+    "confidence": 0.8963,
+    "citations": [
+      "Thread #1914609",
+      "Thread #1980982",
+      "Policy ART_OFF_01",
+      "Policy SOP_CLEAR_CACHE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Offline listening should be seamless.",
+      "Let's see why your downloads aren't cooperating.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Offline listening should be seamless.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's see why your downloads aren't cooperating.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+        "claim_type": "policy_claim",
+        "source": "ART_OFF_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_079",
+    "customer_message": "DID YOU KNOW In order to clear the cache left by #Spotify playlists on your iPhone you need to delete/reinstall the app? Really. Seriously.",
+    "ground_truth_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "predicted_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2602372-Turn1",
+        "thread_id": "2602372",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "DID YOU KNOW In order to clear the cache left by #Spotify playlists on your iPhone you need to delete/reinstall the app? Really. Seriously.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2602372-Turn2",
+        "thread_id": "2602372",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Jake! This isn\u2019t possible right now, but you can add your vote here to help make it happen: <LINK:URL> For anything else, just give us a shout /MA",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2458966-Turn1",
+        "thread_id": "2458966",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hi @customer, is there any way I can clear my cache without having to delete and reinstall the whole app? Seems totally crazy.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2458966-Turn2",
+        "thread_id": "2458966",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Kat! Check out the steps here: <LINK:URL> /TM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1376536-Turn1",
+        "thread_id": "1376536",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares my app is taking 20GB space off my phone and I cant afford to delete anymore apps or photos. How do I clear cache?!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1376536-Turn3",
+        "thread_id": "1376536",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey Alya, help's here! Can you let us know your device, operating system, and Spotify version? We'll see what we can suggest /JP",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2239657-Turn1",
+        "thread_id": "2239657",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "The @customer app on my iPhone deleted all downloaded songs except for the ones on playlists. Not sure what the album downloads did to deserve exile. Not the first time that the app has decided to delete songs on a whim. Won't be the last, I'm sure. <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2239657-Turn2",
+        "thread_id": "2239657",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi. We suggest checking out the steps under \u201cDownloads unexpectedly removed\u201d at <LINK:URL> They should help with this /LM",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_OFF_01",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey there! Offline listening should be seamless. Let's see why your downloads aren't cooperating. Could you try these quick diagnostic steps? (1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache. Let us know how you get on! /SpotifyCares [Citations: Thread #1376536, Thread #2239657, Policy ART_OFF_01, Policy SOP_CLEAR_CACHE]",
+    "confidence": 0.8663,
+    "citations": [
+      "Thread #1376536",
+      "Thread #2239657",
+      "Policy ART_OFF_01",
+      "Policy SOP_CLEAR_CACHE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Offline listening should be seamless.",
+      "Let's see why your downloads aren't cooperating.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Offline listening should be seamless.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's see why your downloads aren't cooperating.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+        "claim_type": "policy_claim",
+        "source": "ART_OFF_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_080",
+    "customer_message": "@SpotifyCares got a free 7 day trial code for the Android mobile app, downloaded some albums - 2 days later they're not available any more?",
+    "ground_truth_intent": "CONTENT_METADATA_AVAILABILITY",
+    "predicted_intent": "OFFLINE_DOWNLOAD_SYNC",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1843419-Turn1",
+        "thread_id": "1843419",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares got a free 7 day trial code for the Android mobile app, downloaded some albums - 2 days later they're not available any more?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1843419-Turn2",
+        "thread_id": "1843419",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Could you send us a DM with your account's email address or username? We'll take a look backstage /MA <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2586525-Turn1",
+        "thread_id": "2586525",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer hey so I have an account I made and I wanna use the 7 day free trial but it's not popping up and it's on an account that's never had premium, pls help",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2586525-Turn2",
+        "thread_id": "2586525",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! The 7-day trial is an in-app offer. We suggest you keep trying to use Premium features on the app; you will then eventually be offered to try it out. Hope this clears things up /AR",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2499447-Turn1",
+        "thread_id": "2499447",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares I dl'ed some albums this morning, but they are now not available. Any ideas why? I'm a Premium member on an Android phone. <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2499447-Turn2",
+        "thread_id": "2499447",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Sorry to hear that! Check out the steps under \u201cDownloads unexpectedly removed\u201d at <LINK:URL> They should help with this /TF",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1847526-Turn1",
+        "thread_id": "1847526",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares My albums i downloaded aren't downloaded after a certain time anymore. But my Playlists always remain downloaded.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1847526-Turn3",
+        "thread_id": "1847526",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey, thanks for including your Android OS version for us! Can you also DM us your account's email address? We'll need to take a look /RR <LINK:URL>",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_OFF_01",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey there! Offline listening should be seamless. Let's see why your downloads aren't cooperating. Could you try these quick diagnostic steps? (1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache. Let us know how you get on! /SpotifyCares [Citations: Thread #1843419, Thread #1847526, Policy ART_OFF_01, Policy SOP_CLEAR_CACHE]",
+    "confidence": 0.7909,
+    "citations": [
+      "Thread #1843419",
+      "Thread #1847526",
+      "Policy ART_OFF_01",
+      "Policy SOP_CLEAR_CACHE"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Offline listening should be seamless.",
+      "Let's see why your downloads aren't cooperating.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Offline listening should be seamless.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's see why your downloads aren't cooperating.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Verify you have an active Premium plan and have gone online within the last 30 days (2) Check available device storage (at least 1GB of free space recommended) (3) In the Spotify app, go to Settings -> Storage -> Clear Cache.",
+        "claim_type": "policy_claim",
+        "source": "ART_OFF_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_086",
+    "customer_message": "@SpotifyCares is there a way to get a list of songs from last weeks Discover Weekly?",
+    "ground_truth_intent": "PLAYLIST_LIBRARY_MGMT",
+    "predicted_intent": "PLAYLIST_LIBRARY_MGMT",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1040136-Turn1",
+        "thread_id": "1040136",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares is there a way to get a list of songs from last weeks Discover Weekly?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1040136-Turn2",
+        "thread_id": "1040136",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer 1: Hey there! Unfortunately we don't have means of retrieving previous Discover Weekly playlists /JX",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2028072-Turn1",
+        "thread_id": "2028072",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares is there a way to get last week\u2019s Discover Weekly playlist? Didn\u2019t realize it reset every Monday...",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2028072-Turn2",
+        "thread_id": "2028072",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! Unfortunately we're unable to recover your previous Discover Weekly. Save your favorites, so you don't miss out in the future /MX",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T189315-Turn1",
+        "thread_id": "189315",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares @customer Is there any way to view the songs on last week's Discover Weekly playlist please???",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T189315-Turn2",
+        "thread_id": "189315",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Unfortunately, we're unable to recover your previous Discover Weekly. We'd suggest saving your favorites moving forward /LP",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1887257-Turn1",
+        "thread_id": "1887257",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Discover Weekly playlist cycled. Few songs I thought I had saved that I can't find. Any way to get them? (Can't recall names)",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1887257-Turn2",
+        "thread_id": "1887257",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! We're afraid we're unable to recover last week's Discover Weekly. Be sure to save them, so you don't miss out in the future /JP",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_LIB_01"
+    ],
+    "response": "Hey! Missing music or playlist trouble is alarming, but we have tools to restore your library. To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser. Once restored, restart the app to refresh your library. Let us know how you get on! /SpotifyCares [Citations: Thread #1040136, Thread #1887257, Policy ART_LIB_01]",
+    "confidence": 0.9412,
+    "citations": [
+      "Thread #1040136",
+      "Thread #1887257",
+      "Policy ART_LIB_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+      "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+      "Once restored, restart the app to refresh your library.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Once restored, restart the app to refresh your library.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_095",
+    "customer_message": "@SpotifyCares you should let users put their playlists into different folders... that\u2019d be innovative",
+    "ground_truth_intent": "PLAYLIST_LIBRARY_MGMT",
+    "predicted_intent": "PLAYLIST_LIBRARY_MGMT",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T639928-Turn1",
+        "thread_id": "639928",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares you should let users put their playlists into different folders... that\u2019d be innovative",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T639928-Turn2",
+        "thread_id": "639928",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there, help's here! You can create a folder by following the steps in the image below. Let us know how this goes /CG <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1415657-Turn1",
+        "thread_id": "1415657",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer can you please make folders available for my playlists so I can better organize?!?!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1415657-Turn2",
+        "thread_id": "1415657",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there! You can find out more about using playlist folders here: <LINK:URL> Hope that helps /NQ",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1243460-Turn1",
+        "thread_id": "1243460",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer please make it to where I can organize my playlist into folders I have tOO MANY PLAYLISTS",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1243460-Turn2",
+        "thread_id": "1243460",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there! Playlist folders are currently an available feature. We have some more info for you here at: <LINK:URL> \ud83d\ude42 /JI",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T404756-Turn1",
+        "thread_id": "404756",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Any chance to in future add the option to sort the playlists one's following? As in: own pl's, spotify's, friends, ...?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T404756-Turn2",
+        "thread_id": "404756",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer 1. Hey C\u00e9dric, this sounds like a great idea! Suggest it in our Community at <LINK:URL> and get support from other users.",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_LIB_01"
+    ],
+    "response": "Hey! Missing music or playlist trouble is alarming, but we have tools to restore your library. To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser. Once restored, restart the app to refresh your library. Let us know how you get on! /SpotifyCares [Citations: Thread #1243460, Thread #1415657, Policy ART_LIB_01]",
+    "confidence": 0.9207,
+    "citations": [
+      "Thread #1243460",
+      "Thread #1415657",
+      "Policy ART_LIB_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+      "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+      "Once restored, restart the app to refresh your library.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Once restored, restart the app to refresh your library.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_099",
+    "customer_message": "Is it just me or everybody feels that @customer shuffle button is biased? Playing some of the saved songs preferably over others.",
+    "ground_truth_intent": "PLAYLIST_LIBRARY_MGMT",
+    "predicted_intent": "PLAYLIST_LIBRARY_MGMT",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1521677-Turn1",
+        "thread_id": "1521677",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Is it just me or everybody feels that @customer shuffle button is biased? Playing some of the saved songs preferably over others.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1521677-Turn2",
+        "thread_id": "1521677",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Ambar! We\u2019ve recently made some improvements to our shuffle algorithm. We\u2019d love to hear your feedback here: <LINK:URL> /GK",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1780039-Turn1",
+        "thread_id": "1780039",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer needs to sort out the next button when it\u2019s on shuffle, a don\u2019t wanna listen to the same artist 5 times over that\u2019s why I shuffled n payed money for it",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1851709-Turn1",
+        "thread_id": "1851709",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Does anyone have the problem in @customer where you click shuffle and it only shuffles 50 songs instead of every song? #HELP @SpotifyCares",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1983462-Turn1",
+        "thread_id": "1983462",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Hi, instead of programming Stranger Things advertisement please fix your wack garbage 'shuffle' function so that it's random",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2963348-Turn1",
+        "thread_id": "2963348",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer after hitting the shuffle button three separate times, why is it that \u201cShake\u201d among other songs are consistently at the bottom. This isn\u2019t a truly random shuffle as you claim <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2963348-Turn2",
+        "thread_id": "2963348",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Brian. We understand your frustration. We\u2019ve recently made some improvements to our shuffle algorithm. We\u2019d love to hear your feedback here: <LINK:URL> If you need anything else, let us know /AL",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_LIB_01"
+    ],
+    "response": "Hey! Missing music or playlist trouble is alarming, but we have tools to restore your library. To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser. Once restored, restart the app to refresh your library. Let us know how you get on! /SpotifyCares [Citations: Thread #1521677, Thread #1780039, Policy ART_LIB_01]",
+    "confidence": 0.8193,
+    "citations": [
+      "Thread #1521677",
+      "Thread #1780039",
+      "Policy ART_LIB_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+      "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+      "Once restored, restart the app to refresh your library.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Once restored, restart the app to refresh your library.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_100",
+    "customer_message": "@customer having an ad containing sirens, alarms and whistles during a playlist called 'Jazz for Sleep' is not cool \ud83d\ude11",
+    "ground_truth_intent": "ADS_PROMOTIONAL_ISSUES",
+    "predicted_intent": "PLAYLIST_LIBRARY_MGMT",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T834637-Turn1",
+        "thread_id": "834637",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer having an ad containing sirens, alarms and whistles during a playlist called 'Jazz for Sleep' is not cool \ud83d\ude11",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T834637-Turn2",
+        "thread_id": "834637",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, we didn't mean to startle you! Thanks for the feedback, we'll make sure it's passed on to our Ads team /NQ",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1264899-Turn1",
+        "thread_id": "1264899",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "I believe there is nothing worse to kill your sleep than having the @customer Sleeping playlist be interrupted by a loud, bitchy, hipster ad.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1264899-Turn2",
+        "thread_id": "1264899",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi! We're sorry to hear that. For now, check out <LINK:URL> if you haven't had a subscription before /MG",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T379989-Turn1",
+        "thread_id": "379989",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "hey @customer i'm gonna need u guys to stop playing horror movie ads at night. i'm just tryna enjoy my \"simp/sad/feels\" playlist.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T379989-Turn2",
+        "thread_id": "379989",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Becca! Sorry, we didn't mean to scare you! We'll pass your feedback on to our Ads team /RS",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2307505-Turn1",
+        "thread_id": "2307505",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hey @customer have you ever considered not playing really loud ads in the middle of the sleep playlist? Kind of counter-productive",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2854388-Turn1",
+        "thread_id": "2854388",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "hey @SpotifyCares i have exhausted the jazz vibes playlist. i know every of the 170 songs down to the note. please add additional songs to the jazz vibes playlist. i know about playlist radio and it is not the same",
+        "snippet_type": "symptom"
+      }
+    ],
+    "matched_policies": [
+      "ART_LIB_01"
+    ],
+    "response": "Hey! Missing music or playlist trouble is alarming, but we have tools to restore your library. To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser. Once restored, restart the app to refresh your library. Let us know how you get on! /SpotifyCares [Citations: Thread #1264899, Thread #2307505, Policy ART_LIB_01]",
+    "confidence": 0.8091,
+    "citations": [
+      "Thread #1264899",
+      "Thread #2307505",
+      "Policy ART_LIB_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+      "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+      "Once restored, restart the app to refresh your library.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Missing music or playlist trouble is alarming, but we have tools to restore your library.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "To recover missing or deleted music: Log in to your account page at spotify.com/account on a web browser.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Once restored, restart the app to refresh your library.",
+        "claim_type": "policy_claim",
+        "source": "ART_LIB_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_106",
+    "customer_message": "The only program which ever causes a total freeze on my Windows 10 machine is @customer, and it does so regularly.",
+    "ground_truth_intent": "APP_CRASH_TECHNICAL_BUG",
+    "predicted_intent": "APP_CRASH_TECHNICAL_BUG",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2898341-Turn1",
+        "thread_id": "2898341",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "The only program which ever causes a total freeze on my Windows 10 machine is @customer, and it does so regularly.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2898341-Turn2",
+        "thread_id": "2898341",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Garve, help's here! Could you DM us some more info? Are you using the web player or desktop app? Which version of Spotfiy are you running? Also, any details or screenshots of error messages you're seeing would be super helpful. We'll be standing by /AL <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T620415-Turn1",
+        "thread_id": "620415",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hi @SpotifyCares the Windows 10 app freezes and crashes consistently on my PC. Resetting, uninstall/reinstall has not helped. Known issue?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T620415-Turn2",
+        "thread_id": "620415",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Tommy, that's not cool! Which Spotify app version are you running? Also, is this happening at any specific points (like during login, or while listening to music)? We'll see what we can suggest /WP",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1846145-Turn1",
+        "thread_id": "1846145",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer why is your app the only app that freezes my phone when installed? No other app has ever done it, so why is yours so much worse?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1846145-Turn2",
+        "thread_id": "1846145",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there! Can you tell us at which point in using the app does your device freeze? Also, does the issue only happen on a single device? /JM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2709262-Turn1",
+        "thread_id": "2709262",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Every time I launch Spotify on Windows 10, the whole computer freezes, what can I do ?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2709262-Turn2",
+        "thread_id": "2709262",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, that's not right! Can you let us know the make and model of your device and the exact version of Spotify you're running? We'll see what we can suggest /RA",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_BUG_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey! We're sorry to hear the app is crashing on you. Let's get things back up and running. Could you try these quick diagnostic steps? (1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device. Let us know how you get on! /SpotifyCares [Citations: Thread #1846145, Thread #2709262, Policy ART_BUG_01, Policy SOP_CLEAN_REINSTALL]",
+    "confidence": 0.9226,
+    "citations": [
+      "Thread #1846145",
+      "Thread #2709262",
+      "Policy ART_BUG_01",
+      "Policy SOP_CLEAN_REINSTALL"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "We're sorry to hear the app is crashing on you.",
+      "Let's get things back up and running.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We're sorry to hear the app is crashing on you.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's get things back up and running.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device.",
+        "claim_type": "policy_claim",
+        "source": "ART_BUG_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_115",
+    "customer_message": "@SpotifyCares hey dudes and dudettes...latest version on ios isnt loading artist pages from search and goto. Just blank screen after load. <LINK:URL>",
+    "ground_truth_intent": "APP_CRASH_TECHNICAL_BUG",
+    "predicted_intent": "APP_CRASH_TECHNICAL_BUG",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1682033-Turn1",
+        "thread_id": "1682033",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares hey dudes and dudettes...latest version on ios isnt loading artist pages from search and goto. Just blank screen after load. <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1682033-Turn2",
+        "thread_id": "1682033",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there! Can you tell us what exact device, OS, and Spotify version you're using? We'll see what we can suggest /NH",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2364779-Turn1",
+        "thread_id": "2364779",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hey @SpotifyCares did a recent iOS update remove search from the app?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2364779-Turn2",
+        "thread_id": "2364779",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! You should still be able to use Search on the most recent version of iOS. Could you let us know what's happening exactly? /CX",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2916518-Turn1",
+        "thread_id": "2916518",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares are you having issues? Search just brings me to a blank page. Doesn't work on wifi or mobile. Running iOS 10.3.3. Started today, wasn't an issue yesterday. <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2916518-Turn2",
+        "thread_id": "2916518",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Fiona! Everything should be running smoothly now. Let us know if this is still happening /GS",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1968691-Turn1",
+        "thread_id": "1968691",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Hi. Desktop app has been way too slow and not responsive lately. Search takes ages. Can you help? MacOS Sierra 10.12.6. Thx",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1968691-Turn2",
+        "thread_id": "1968691",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you give us more info on what's happening exactly? What app version are you running? We'll see what we can suggest /PB",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_BUG_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey! We're sorry to hear the app is crashing on you. Let's get things back up and running. Could you try these quick diagnostic steps? (1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device. Let us know how you get on! /SpotifyCares [Citations: Thread #1682033, Thread #1968691, Policy ART_BUG_01, Policy SOP_CLEAN_REINSTALL]",
+    "confidence": 0.8675,
+    "citations": [
+      "Thread #1682033",
+      "Thread #1968691",
+      "Policy ART_BUG_01",
+      "Policy SOP_CLEAN_REINSTALL"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "We're sorry to hear the app is crashing on you.",
+      "Let's get things back up and running.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We're sorry to hear the app is crashing on you.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's get things back up and running.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device.",
+        "claim_type": "policy_claim",
+        "source": "ART_BUG_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_119",
+    "customer_message": "@customer just a black screen nothing loads ,and secondly i can't log in but i found a mozilla app a few minutes and it is all black too",
+    "ground_truth_intent": "APP_CRASH_TECHNICAL_BUG",
+    "predicted_intent": "APP_CRASH_TECHNICAL_BUG",
+    "priority": "high",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T465270-Turn1",
+        "thread_id": "465270",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer just a black screen nothing loads ,and secondly i can't log in but i found a mozilla app a few minutes and it is all black too",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T465270-Turn2",
+        "thread_id": "465270",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Charlie! Can you let us know the device, operating system, and Spotify version you're using? We'll see what we can suggest /LO",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2203844-Turn1",
+        "thread_id": "2203844",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Screen says \"create account\" or \"log in\". I press log in. Screen never progresses and just loads forever. Have tried on multiple days, and have uninstalled and reinstalled. Have tried in safari, same problem. Please reimburse my membership and help me to log in.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2203844-Turn2",
+        "thread_id": "2203844",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi Hennessy! We just dropped you a DM. Let's carry on chatting there /CP",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1695246-Turn1",
+        "thread_id": "1695246",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Is the web player down right now? Just getting a black screen or the login screen...",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1695246-Turn2",
+        "thread_id": "1695246",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, that's odd! Does clearing your cache/cookies help? You might also want to try using an incognito window. Let us know how it goes /KL",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2917883-Turn1",
+        "thread_id": "2917883",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer either this or a blank screen will pop up when I try to search an artist <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2917883-Turn2",
+        "thread_id": "2917883",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, thanks for the report! We had a little hiccup earlier, but everything should be running just fine now /JS",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_BUG_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CLEAR_CACHE"
+    ],
+    "response": "Hey! We're sorry to hear the app is crashing on you. Let's get things back up and running. Could you try these quick diagnostic steps? (1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device. Let us know how you get on! /SpotifyCares [Citations: Thread #1695246, Thread #2203844, Policy ART_BUG_01, Policy SOP_CLEAN_REINSTALL]",
+    "confidence": 0.81,
+    "citations": [
+      "Thread #1695246",
+      "Thread #2203844",
+      "Policy ART_BUG_01",
+      "Policy SOP_CLEAN_REINSTALL"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "We're sorry to hear the app is crashing on you.",
+      "Let's get things back up and running.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We're sorry to hear the app is crashing on you.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let's get things back up and running.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Completely uninstall Spotify from your device application manager (2) Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify) (3) Restart your computer or mobile device.",
+        "claim_type": "policy_claim",
+        "source": "ART_BUG_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_126",
+    "customer_message": "@customer your services will not connect to my Bluetooth in my car. I\u2019m pissed.",
+    "ground_truth_intent": "DEVICE_CONNECT_INTEGRATION",
+    "predicted_intent": "DEVICE_CONNECT_INTEGRATION",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T1585546-Turn1",
+        "thread_id": "1585546",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer your services will not connect to my Bluetooth in my car. I\u2019m pissed.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1585546-Turn2",
+        "thread_id": "1585546",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there. That doesn't sound good. Can you let us know the device, OS, and Spotify version you're rocking? /QI",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1295921-Turn1",
+        "thread_id": "1295921",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares Hi! Shuffle seems to default to off when connected to my car via Bluetooth, is this a known issue? Cheers!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1295921-Turn2",
+        "thread_id": "1295921",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi! We've just sent a DM your way. Let's carry on chatting there /CO",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2896745-Turn1",
+        "thread_id": "2896745",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer updated app recently on android and when using bluetooth it disconnects after a couple of songs. Thought it was my BT speaker but happens in my car too. Any ideas?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2896745-Turn2",
+        "thread_id": "2896745",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you try reinstalling the app using the steps here: <LINK:URL> Let us know how it plays out /LM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2861311-Turn1",
+        "thread_id": "2861311",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer for iPhone X needs an update. Car Bluetooth isn\u2019t always sending song data and controls don\u2019t work.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2861311-Turn2",
+        "thread_id": "2861311",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, help's here! Can you let us know your car's make/model, phone operating system, and Spotify version? We'll see what we can suggest /JZ",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_DEV_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CONNECT_PAIRING",
+      "ESC_SAFETY"
+    ],
+    "response": "Hey there! Seamless connection across your speakers is what Spotify is all about \u2014 let's reconnect. Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist. You can also review your active subscriptions anytime at https://support.spotify.com/article/spotify-connect/ Let us know how you get on! /SpotifyCares [Citations: Thread #1295921, Thread #1585546, Policy ART_DEV_01, Policy SOP_CLEAN_REINSTALL]",
+    "confidence": 0.9331,
+    "citations": [
+      "Thread #1295921",
+      "Thread #1585546",
+      "Policy ART_DEV_01",
+      "Policy SOP_CLEAN_REINSTALL"
+    ],
+    "escalation_required": true,
+    "target_queue": "human_support",
+    "resolution_type": "DM_DEFLECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Seamless connection across your speakers is what Spotify is all about \u2014 let's reconnect.",
+      "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+      "You can also review your active subscriptions anytime at https://support.spotify.com/article/spotify-connect/ Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Seamless connection across your speakers is what Spotify is all about \u2014 let's reconnect.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can also review your active subscriptions anytime at https://support.spotify.com/article/spotify-connect/ Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_135",
+    "customer_message": "@customer Getting 503 and 504 messages when attempting to view Account Status from player (either desktop or web player). OSX High Sierra/Chrome. Any ideaa? Looking to upgrade and can't. This is from the UK, via Virgin Media broadband.",
+    "ground_truth_intent": "DEVICE_CONNECT_INTEGRATION",
+    "predicted_intent": "DEVICE_CONNECT_INTEGRATION",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2792171-Turn1",
+        "thread_id": "2792171",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Getting 503 and 504 messages when attempting to view Account Status from player (either desktop or web player). OSX High Sierra/Chrome. Any ideaa? Looking to upgrade and can't. This is from the UK, via Virgin Media broadband.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2792171-Turn2",
+        "thread_id": "2792171",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Steve, help's here! Everything looks good on our end now. Can you try using a different device, browser, or incognito window? Let us know if that makes a difference /RK",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2857433-Turn1",
+        "thread_id": "2857433",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "attn @customer / @SpotifyCares the media buttons don\u2019t work in High Sierra on desktop and it is making me all <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2857433-Turn2",
+        "thread_id": "2857433",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there, the cavalry's here! Could you shoot us a DM with your username and email address? Any screenshots would also be helpful. We'll check it out \ud83d\udd0d /LJ <LINK:URL>",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T559967-Turn1",
+        "thread_id": "559967",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer What's up with the web player? I haven't been able to play anything for a couple of days on either Opera or Firefox...",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T559967-Turn2",
+        "thread_id": "559967",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there. Can you let us know what device and operating system you're using? Also, are you getting any specific error messages when trying to play a track? /LM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1829525-Turn1",
+        "thread_id": "1829525",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Getting a lot of issues with web player - 'Oops something went wrong, reload', seeing nginx 503 errors!",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1829525-Turn2",
+        "thread_id": "1829525",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Roo! Can you try clearing your browser's cache and cookies? Using an incognito window might do the trick, too. Keep us posted /JE",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_DEV_01",
+      "SOP_CLEAN_REINSTALL",
+      "SOP_CONNECT_PAIRING"
+    ],
+    "response": "Hey there! Seamless connection across your speakers is what Spotify is all about \u2014 let's reconnect. Could you try these quick diagnostic steps? (1) Ensure both your device and speaker/smart device are connected to the exact same WiFi network (2) Unpair and re-pair Bluetooth connections on your phone/computer (3) In the Alexa / Google Home app, unlink Spotify Skill and re-link with your Spotify credentials. Let us know how you get on! /SpotifyCares [Citations: Thread #1829525, Thread #2792171, Policy ART_DEV_01, Policy SOP_CLEAN_REINSTALL]",
+    "confidence": 0.878,
+    "citations": [
+      "Thread #1829525",
+      "Thread #2792171",
+      "Policy ART_DEV_01",
+      "Policy SOP_CLEAN_REINSTALL"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "TECHNICAL_TROUBLESHOOTING",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Seamless connection across your speakers is what Spotify is all about \u2014 let's reconnect.",
+      "Could you try these quick diagnostic steps?",
+      "(1) Ensure both your device and speaker/smart device are connected to the exact same WiFi network (2) Unpair and re-pair Bluetooth connections on your phone/computer (3) In the Alexa / Google Home app, unlink Spotify Skill and re-link with your Spotify credentials.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Seamless connection across your speakers is what Spotify is all about \u2014 let's reconnect.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Could you try these quick diagnostic steps?",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "(1) Ensure both your device and speaker/smart device are connected to the exact same WiFi network (2) Unpair and re-pair Bluetooth connections on your phone/computer (3) In the Alexa / Google Home app, unlink Spotify Skill and re-link with your Spotify credentials.",
+        "claim_type": "policy_claim",
+        "source": "ART_DEV_01"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_146",
+    "customer_message": "@SpotifyCares hi! is there a reason why the @customer 'unbreakable:the hits' album isn't on Spotify? it was on there but hasn't been for a couple of months? there are also some singles not on there anymore either?",
+    "ground_truth_intent": "CONTENT_METADATA_AVAILABILITY",
+    "predicted_intent": "CONTENT_METADATA_AVAILABILITY",
+    "priority": "low",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2516156-Turn1",
+        "thread_id": "2516156",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@SpotifyCares hi! is there a reason why the @customer 'unbreakable:the hits' album isn't on Spotify? it was on there but hasn't been for a couple of months? there are also some singles not on there anymore either?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2516156-Turn3",
+        "thread_id": "2516156",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hi Eloise. Sometimes content gets temporarily removed because of licensing changes. Hopefully we'll have it available again soon! /JU",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1556437-Turn1",
+        "thread_id": "1556437",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "is this only happening to me? why is @customer\u2018s album not available anymore? @SpotifyCares <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1556437-Turn5",
+        "thread_id": "1556437",
+        "turn_id": 5,
+        "role": "brand",
+        "content": "@customer Hey! Fingers crossed we'll have it available again, but there's info about Spotify content here: <LINK:URL> /MU",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2471106-Turn1",
+        "thread_id": "2471106",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer please bring back westlife\u2019s unbreakable: greatest hits album",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2677963-Turn1",
+        "thread_id": "2677963",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer any reason why @customer album not up there it's the 31st",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2853048-Turn1",
+        "thread_id": "2853048",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer why isn't the pretty reckless first album on Spotify?",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2853048-Turn2",
+        "thread_id": "2853048",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! We\u2019d love to have all of their stuff available, but we have some info about content here: <LINK:URL> /DB",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_CONT_01"
+    ],
+    "response": "Hey! We hear you \u2014 it's always disappointing when a track or album you love isn't available to stream. Music availability is determined by rightsholders and can vary by region. Let us know how you get on! /SpotifyCares [Citations: Thread #1556437, Thread #2471106, Policy ART_CONT_01]",
+    "confidence": 0.8997,
+    "citations": [
+      "Thread #1556437",
+      "Thread #2471106",
+      "Policy ART_CONT_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "SELF_SERVE",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 0.8333,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "We hear you \u2014 it's always disappointing when a track or album you love isn't available to stream.",
+      "Music availability is determined by rightsholders and can vary by region.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [
+      "We're always working to expand our catalog worldwide!"
+    ],
+    "unsupported_claims_before": [
+      "We're always working to expand our catalog worldwide!"
+    ],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We hear you \u2014 it's always disappointing when a track or album you love isn't available to stream.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Music availability is determined by rightsholders and can vary by region.",
+        "claim_type": "policy_claim",
+        "source": "ART_CONT_01"
+      },
+      {
+        "claim": "We're always working to expand our catalog worldwide!",
+        "claim_type": "unsupported_claim",
+        "source": "none"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": true
+  },
+  {
+    "example_id": "EX_155",
+    "customer_message": "expensive girl isn't on Spotify <LINK:URL>",
+    "ground_truth_intent": "CONTENT_METADATA_AVAILABILITY",
+    "predicted_intent": "CONTENT_METADATA_AVAILABILITY",
+    "priority": "low",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T339552-Turn1",
+        "thread_id": "339552",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "expensive girl isn't on Spotify <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T339552-Turn3",
+        "thread_id": "339552",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey! Fingers crossed we'll be able to have it soon, but there's info about Spotify content here: <LINK:URL> /JS",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2078816-Turn1",
+        "thread_id": "2078816",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Spotify doesn\u2019t have material girl by The Weeknd OR cheer up by J. Cole what the fuckkk Spotify?! @customer",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2078816-Turn2",
+        "thread_id": "2078816",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Carisa! We\u2019d love to have all of their stuff available, but we have some info about content here: <LINK:URL> /SU",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2725155-Turn1",
+        "thread_id": "2725155",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "\"She's Gone\" by Steelheart is not available anymore wtf? \ud83d\ude29\ud83d\ude24 @customer <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2662796-Turn1",
+        "thread_id": "2662796",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer your app sucks, i shuffle Without Warning album and the first song that plays is Ariana Grande like what",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2662796-Turn2",
+        "thread_id": "2662796",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! What device, operating system, and Spotify version is this happening on? Also, are you rocking Free or Premium? /AY",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1562776-Turn1",
+        "thread_id": "1562776",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Why isn\u2019t LiLiLiLi Yabbay not on Spotify yet >:(",
+        "snippet_type": "symptom"
+      }
+    ],
+    "matched_policies": [
+      "ART_CONT_01"
+    ],
+    "response": "Hey! We hear you \u2014 it's always disappointing when a track or album you love isn't available to stream. Music availability is determined by rightsholders and can vary by region. Let us know how you get on! /SpotifyCares [Citations: Thread #1562776, Thread #2078816, Policy ART_CONT_01]",
+    "confidence": 0.8423,
+    "citations": [
+      "Thread #1562776",
+      "Thread #2078816",
+      "Policy ART_CONT_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "LINK_REDIRECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 0.8333,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey!",
+      "We hear you \u2014 it's always disappointing when a track or album you love isn't available to stream.",
+      "Music availability is determined by rightsholders and can vary by region.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [
+      "We're always working to expand our catalog worldwide!"
+    ],
+    "unsupported_claims_before": [
+      "We're always working to expand our catalog worldwide!"
+    ],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We hear you \u2014 it's always disappointing when a track or album you love isn't available to stream.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Music availability is determined by rightsholders and can vary by region.",
+        "claim_type": "policy_claim",
+        "source": "ART_CONT_01"
+      },
+      {
+        "claim": "We're always working to expand our catalog worldwide!",
+        "claim_type": "unsupported_claim",
+        "source": "none"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": true
+  },
+  {
+    "example_id": "EX_166",
+    "customer_message": "If I hear one more Strongbow advert I'm deleting the app @customer I'd rather drink my own piss.",
+    "ground_truth_intent": "ADS_PROMOTIONAL_ISSUES",
+    "predicted_intent": "ADS_PROMOTIONAL_ISSUES",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T401771-Turn1",
+        "thread_id": "401771",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "If I hear one more Strongbow advert I'm deleting the app @customer I'd rather drink my own piss.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T401771-Turn2",
+        "thread_id": "401771",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there, we didn't mean to cause any offense. We'll pass the feedback on to the right people /RV",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1842577-Turn1",
+        "thread_id": "1842577",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Fuck I think I acty hate @customer, I've tried everything and this shit app keeps deleting all my downloaded songs <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1842577-Turn2",
+        "thread_id": "1842577",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, sorry to hear that! Check the steps under \u201cDownloads unexpectedly removed\u201d at <LINK:URL> They should help with this /MA",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2259693-Turn1",
+        "thread_id": "2259693",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "tell me why im listening to 21 savage and some dumbass country singer commercial comes on fuck all that bull shit @customer",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2259693-Turn2",
+        "thread_id": "2259693",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! You can show your support for ads that are better suited to you by voting here: <LINK:URL> /JI",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1268538-Turn1",
+        "thread_id": "1268538",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "All my @customer ads are of alcohol, like ffs I don\u2019t have money for premium stop teasing me with drink please !!! \ud83d\ude44\ud83d\ude2d",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2190965-Turn1",
+        "thread_id": "2190965",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Hey @customer how do I get your ads to be literally anything besides alcohol? I quit drinking at the beginning of this year and you have offered me a drink like 30 times in 2 weeks. I'm not interested, thank you. Please stop?",
+        "snippet_type": "symptom"
+      }
+    ],
+    "matched_policies": [
+      "ART_ADS_01",
+      "ESC_SAFETY"
+    ],
+    "response": "Hey there! Thanks for bringing this ad experience to our attention. We want commercial delivery to be smooth. Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist. You can also review your active subscriptions anytime at https://support.spotify.com/article/ad-feedback/ Let us know how you get on! /SpotifyCares [Citations: Thread #1268538, Thread #1842577, Policy ART_ADS_01, Policy ESC_SAFETY]",
+    "confidence": 0.8513,
+    "citations": [
+      "Thread #1268538",
+      "Thread #1842577",
+      "Policy ART_ADS_01",
+      "Policy ESC_SAFETY"
+    ],
+    "escalation_required": true,
+    "target_queue": "human_support",
+    "resolution_type": "DM_DEFLECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Thanks for bringing this ad experience to our attention.",
+      "We want commercial delivery to be smooth.",
+      "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+      "You can also review your active subscriptions anytime at https://support.spotify.com/article/ad-feedback/ Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Thanks for bringing this ad experience to our attention.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We want commercial delivery to be smooth.",
+        "claim_type": "article_claim",
+        "source": "ART_ADS_01"
+      },
+      {
+        "claim": "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can also review your active subscriptions anytime at https://support.spotify.com/article/ad-feedback/ Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_175",
+    "customer_message": "You lied to me. How can I ever trust you again? How can I ever trust anyone who promises me the same thing? I watched the video. I deserved my 30 minuets of ad free music. You hurt me @customer",
+    "ground_truth_intent": "ADS_PROMOTIONAL_ISSUES",
+    "predicted_intent": "ADS_PROMOTIONAL_ISSUES",
+    "priority": "medium",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2720909-Turn1",
+        "thread_id": "2720909",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "You lied to me. How can I ever trust you again? How can I ever trust anyone who promises me the same thing? I watched the video. I deserved my 30 minuets of ad free music. You hurt me @customer",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2720909-Turn2",
+        "thread_id": "2720909",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, that doesn't sound good! Did the app crash at any point during the 30 minutes? That can cause the ad-free time to reset /AK",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1695256-Turn1",
+        "thread_id": "1695256",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "I just got 30 minutes of ad free music on @customer and i listened to 1 song, changed the playlist, AND GOT AN AD. This is the reason i have trust issues",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2848335-Turn1",
+        "thread_id": "2848335",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Are you kidding me @customer ? In a 50 minute period I got nine minutes of music and the rest was ads come on please stop this I know you guys gotta make money but come on now",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2848335-Turn2",
+        "thread_id": "2848335",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there, we understand your frustration. Can you DM us your account's username and email address? We'll do some digging /JK",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T569615-Turn1",
+        "thread_id": "569615",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer I clicked the video for 30 minutes of ad free music and got through two songs before an ad popped up. TWO songs",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T569615-Turn2",
+        "thread_id": "569615",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer That's strange. We'll get this passed on to our devs so they can look into it. Give us a shout if you need anything else /NQ",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2077814-Turn1",
+        "thread_id": "2077814",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "i love u with all my Heart and Soul but even i am tired of hearing ur ad :( @SpotifyCares pls let me listen to sad songs in Peace <LINK:URL>",
+        "snippet_type": "symptom"
+      }
+    ],
+    "matched_policies": [
+      "ART_ADS_01",
+      "ESC_SAFETY"
+    ],
+    "response": "Hey there! Thanks for bringing this ad experience to our attention. We want commercial delivery to be smooth. Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist. You can also review your active subscriptions anytime at https://support.spotify.com/article/ad-feedback/ Let us know how you get on! /SpotifyCares [Citations: Thread #1695256, Thread #2077814, Policy ART_ADS_01, Policy ESC_SAFETY]",
+    "confidence": 0.8748,
+    "citations": [
+      "Thread #1695256",
+      "Thread #2077814",
+      "Policy ART_ADS_01",
+      "Policy ESC_SAFETY"
+    ],
+    "escalation_required": true,
+    "target_queue": "human_support",
+    "resolution_type": "DM_DEFLECTION",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Thanks for bringing this ad experience to our attention.",
+      "We want commercial delivery to be smooth.",
+      "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+      "You can also review your active subscriptions anytime at https://support.spotify.com/article/ad-feedback/ Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Thanks for bringing this ad experience to our attention.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "We want commercial delivery to be smooth.",
+        "claim_type": "article_claim",
+        "source": "ART_ADS_01"
+      },
+      {
+        "claim": "Because billing and account details need to remain private, please send us a Direct Message with your account's email address and receipt date so our team can assist.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can also review your active subscriptions anytime at https://support.spotify.com/article/ad-feedback/ Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_186",
+    "customer_message": "@customer plz bring back full dates on when albums where released instead of just the year... I love knowing exactly something is out! \ud83d\ude4f",
+    "ground_truth_intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "predicted_intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "priority": "low",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T885137-Turn1",
+        "thread_id": "885137",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer plz bring back full dates on when albums where released instead of just the year... I love knowing exactly something is out! \ud83d\ude4f",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T885137-Turn2",
+        "thread_id": "885137",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer We hear you, Nancy! Your feedback has been noted and passed onto the team \ud83d\udc4a\ud83c\udffc /CG",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2158577-Turn1",
+        "thread_id": "2158577",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer The reason why I am saying this is because most the albums from artists have been removed and I want the albums. I want it started with the 1st album and the year it was released to the albums from 2017. Thanks.",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2158577-Turn2",
+        "thread_id": "2158577",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Dushan! We\u2019d love to have all of the artists' stuff available, but we have some info about content here: <LINK:URL> /AR",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1301430-Turn1",
+        "thread_id": "1301430",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer Please put back the full release dates on songs and albums, instead of just having the year, it was really helpful and I liked it",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1301430-Turn2",
+        "thread_id": "1301430",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hi there, thanks for the feedback \u2013 we appreciate it! We\u2019ll get this passed onto the right team \ud83d\udc9a /MT",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2508334-Turn1",
+        "thread_id": "2508334",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer why did you remove the exact release dates from albums? its nice seeing an albums birthday :'(",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2508334-Turn2",
+        "thread_id": "2508334",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! We hear you \ud83c\udfa7 Rest assured, your feedback will be passed on to the right folks. If there's anything else, just give us a shout /PK",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_UI_01"
+    ],
+    "response": "Hey there! Thanks so much for sharing your product feedback and ideas with us. The best place to make your voice heard is our Spotify Community Idea Submissions board. You can submit your feature concept or vote on existing ideas here: <LINK:URL>. Let us know how you get on! /SpotifyCares [Citations: Thread #1301430, Thread #2158577, Policy ART_UI_01]",
+    "confidence": 0.8932,
+    "citations": [
+      "Thread #1301430",
+      "Thread #2158577",
+      "Policy ART_UI_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "COMMUNITY_REDIRECT",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Thanks so much for sharing your product feedback and ideas with us.",
+      "The best place to make your voice heard is our Spotify Community Idea Submissions board.",
+      "You can submit your feature concept or vote on existing ideas here: <LINK:URL>.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Thanks so much for sharing your product feedback and ideas with us.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "The best place to make your voice heard is our Spotify Community Idea Submissions board.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can submit your feature concept or vote on existing ideas here: <LINK:URL>.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_195",
+    "customer_message": "@customer you guys should bring back the old search page. When I can look at my recent searches rather than having to go to the album every time.",
+    "ground_truth_intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "predicted_intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "priority": "low",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T2335547-Turn1",
+        "thread_id": "2335547",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "WHY DID @customer CLEAR MY MOST RECENT SEARCHES. i'm so annoyed holy shit",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2335547-Turn2",
+        "thread_id": "2335547",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Can you tell us more about what happened before your recent searches disappeared? We'll see what we can suggest /AR",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T1461614-Turn1",
+        "thread_id": "1461614",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Could you possibly make our \"recent searches\" twice as long? Would be awesome... @customer",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T1461614-Turn2",
+        "thread_id": "1461614",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! We can see how that\u2019d be handy. Thanks for taking the time to reach out. We\u2019ll get this passed onto the right team \ud83d\udc9a /CO",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2285102-Turn1",
+        "thread_id": "2285102",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "I hate the new @customer update and I literally can\u2019t even find the search bar. Change it back\ud83d\ude29\ud83d\ude29",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2285102-Turn2",
+        "thread_id": "2285102",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Jordan, help's here! Could you send us a screenshot of what it looks like on your end? We'll take a look /TB",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2135040-Turn1",
+        "thread_id": "2135040",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "BRING BACK BTOB'S \"COMPLETE\" AND \"I MEAN\" ALBUM, @customer PLEASE! <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2135040-Turn2",
+        "thread_id": "2135040",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey, we hear you! Sometimes content gets temporarily removed due to licensing changes. Hopefully we'll have it available again soon \ud83d\ude42 /TR",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_UI_01"
+    ],
+    "response": "Hey there! Thanks so much for sharing your product feedback and ideas with us. The best place to make your voice heard is our Spotify Community Idea Submissions board. You can submit your feature concept or vote on existing ideas here: <LINK:URL>. Let us know how you get on! /SpotifyCares [Citations: Thread #1461614, Thread #2135040, Policy ART_UI_01]",
+    "confidence": 0.8562,
+    "citations": [
+      "Thread #1461614",
+      "Thread #2135040",
+      "Policy ART_UI_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "COMMUNITY_REDIRECT",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Thanks so much for sharing your product feedback and ideas with us.",
+      "The best place to make your voice heard is our Spotify Community Idea Submissions board.",
+      "You can submit your feature concept or vote on existing ideas here: <LINK:URL>.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Thanks so much for sharing your product feedback and ideas with us.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "The best place to make your voice heard is our Spotify Community Idea Submissions board.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can submit your feature concept or vote on existing ideas here: <LINK:URL>.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  },
+  {
+    "example_id": "EX_199",
+    "customer_message": "@customer your share feature isn't working for me \ud83d\ude2d",
+    "ground_truth_intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "predicted_intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "priority": "low",
+    "retrieved_evidence_snippets": [
+      {
+        "snippet_id": "T311705-Turn1",
+        "thread_id": "311705",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer your share feature isn't working for me \ud83d\ude2d",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T311705-Turn2",
+        "thread_id": "311705",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey Tyler! Are you getting any error messages? If so, a screenshot of it will be helpful. Also, what device/OS are you using? /RK",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2056587-Turn1",
+        "thread_id": "2056587",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "@customer still waiting for you to bring back the lyric feature..",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2056587-Turn2",
+        "thread_id": "2056587",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey there! Lyrics is currently unavailable as we're making some big improvements to the feature. We'll share more updates soon /JM",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T2479180-Turn1",
+        "thread_id": "2479180",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "Seriously, @customer. This feature is important to me. <LINK:URL>",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T2479180-Turn3",
+        "thread_id": "2479180",
+        "turn_id": 3,
+        "role": "brand",
+        "content": "@customer Hey Hannah! This isn\u2019t possible right now, but we have more info about this on our Community. Check it out: <LINK:URL> /K",
+        "snippet_type": "resolution"
+      },
+      {
+        "snippet_id": "T820754-Turn1",
+        "thread_id": "820754",
+        "turn_id": 1,
+        "role": "customer",
+        "content": "feature request: @customer for iPod Classic",
+        "snippet_type": "symptom"
+      },
+      {
+        "snippet_id": "T820754-Turn2",
+        "thread_id": "820754",
+        "turn_id": 2,
+        "role": "brand",
+        "content": "@customer Hey! This isn't currently possible, but thanks for the feedback. We'll pass it on. More info at <LINK:URL> /AR",
+        "snippet_type": "resolution"
+      }
+    ],
+    "matched_policies": [
+      "ART_UI_01"
+    ],
+    "response": "Hey there! Thanks so much for sharing your product feedback and ideas with us. The best place to make your voice heard is our Spotify Community Idea Submissions board. You can submit your feature concept or vote on existing ideas here: <LINK:URL>. Let us know how you get on! /SpotifyCares [Citations: Thread #2056587, Thread #2479180, Policy ART_UI_01]",
+    "confidence": 0.688,
+    "citations": [
+      "Thread #2056587",
+      "Thread #2479180",
+      "Policy ART_UI_01"
+    ],
+    "escalation_required": false,
+    "target_queue": null,
+    "resolution_type": "COMMUNITY_REDIRECT",
+    "grounding_score": 1.0,
+    "raw_grounding_score": 1.0,
+    "final_grounding_score": 1.0,
+    "verified_claims": [
+      "Hey there!",
+      "Thanks so much for sharing your product feedback and ideas with us.",
+      "The best place to make your voice heard is our Spotify Community Idea Submissions board.",
+      "You can submit your feature concept or vote on existing ideas here: <LINK:URL>.",
+      "Let us know how you get on!",
+      "/SpotifyCares"
+    ],
+    "unsupported_claims": [],
+    "unsupported_claims_before": [],
+    "unsupported_claims_after": [],
+    "claim_classifications": [
+      {
+        "claim": "Hey there!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Thanks so much for sharing your product feedback and ideas with us.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "The best place to make your voice heard is our Spotify Community Idea Submissions board.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "You can submit your feature concept or vote on existing ideas here: <LINK:URL>.",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "Let us know how you get on!",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      },
+      {
+        "claim": "/SpotifyCares",
+        "claim_type": "brand_voice_claim",
+        "source": "brand_voice"
+      }
+    ],
+    "remediation_applied": false
+  }
+]

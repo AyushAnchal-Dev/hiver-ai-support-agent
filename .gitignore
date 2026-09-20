@@ -1,0 +1,46 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# Large Raw Archives (exceeds GitHub 100MB limit)
+archive/
+*.tar.gz
+*.zip
+
+# Runtime & Build Artifacts
+logs/
+metrics/
+report/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+freeze.txt
+
+# Model & Embeddings Caches
+cache/
+models/
+hf_cache/
+
+# IDE & Tooling
+.vscode/
+.idea/
+*.swp
+*.swo
+.kilo/
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Python Bytecode and Cache (everywhere)
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+

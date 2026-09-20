@@ -1,0 +1,27 @@
+﻿services:
+  - type: web
+    name: hiver-ai-agent
+    runtime: docker
+    plan: standard
+    region: oregon
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
+      - key: ENABLE_WARMUP
+        value: "true"
+      - key: LLM_PROVIDER
+        value: MOCK
+      - key: OFFLINE_MODE
+        value: "true"
+      - key: PROMPT_VERSION
+        value: v1
+      - key: LOG_LEVEL
+        value: INFO
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

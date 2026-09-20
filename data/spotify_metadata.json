@@ -1,0 +1,19 @@
+{
+  "dataset_name": "SpotifyCares Twitter Customer Support Conversations",
+  "source_dataset": "archive/twcs.csv",
+  "target_brand": "SpotifyCares",
+  "total_tweets": 91962,
+  "total_threads": 28229,
+  "average_thread_length": 3.249,
+  "median_thread_length": 2,
+  "maximum_depth": 28,
+  "total_customer_turns": 48474,
+  "total_brand_turns": 43246,
+  "status_distribution": {
+    "resolved_publicly": 16076,
+    "deflected_to_dm": 12153,
+    "unanswered": 0
+  },
+  "generation_timestamp": "2026-09-14T08:54:14.186568+00:00",
+  "schema_version": "2.0.0"
+}

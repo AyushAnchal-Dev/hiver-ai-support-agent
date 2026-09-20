@@ -1,0 +1,152 @@
+[
+  {
+    "article_id": "ART_ACC_01",
+    "title": "Resetting Your Password & Account Recovery",
+    "category": "Account",
+    "intent": "ACCOUNT_ACCESS_AUTH",
+    "canonical_url": "https://support.spotify.com/article/reset-password/",
+    "summary": "Step-by-step guidance to regain access to your Spotify account using verified email or password reset link.",
+    "diagnostic_steps": [
+      "Go to the password reset page at spotify.com/password-reset",
+      "Enter your registered email address or username",
+      "Check your inbox (and spam folder) for the password reset link",
+      "If traveling abroad for >14 days on a Free account, update country settings or upgrade to Premium"
+    ],
+    "keywords": ["password", "login", "reset", "forgot", "credentials", "14 days", "travel", "country", "locked"]
+  },
+  {
+    "article_id": "ART_BILL_01",
+    "title": "Managing Your Subscription & Charges",
+    "category": "Billing",
+    "intent": "SUBSCRIPTION_BILLING",
+    "canonical_url": "https://support.spotify.com/article/subscription-billing/",
+    "summary": "Official Spotify billing terms, cancellation confirmation, and payment dispute guidelines.",
+    "diagnostic_steps": [
+      "Log in to your account page at spotify.com/account to verify active subscription status",
+      "Check Receipts tab to confirm the exact billing date and card charged",
+      "If subscribed through Apple or Google, cancel directly in your device app store subscriptions",
+      "If charged after cancelling, verify whether you have a secondary active account under a different email"
+    ],
+    "keywords": ["charged", "billing", "cancel", "refund", "subscription", "premium", "receipt", "paypal", "apple"]
+  },
+  {
+    "article_id": "ART_PLAY_01",
+    "title": "Fixing Audio Stuttering, Pausing & Buffering",
+    "category": "Playback",
+    "intent": "PLAYBACK_STREAMING",
+    "canonical_url": "https://support.spotify.com/article/playback-issues/",
+    "summary": "Diagnostic troubleshooting for tracks that pause, skip, buffer, or fail to produce sound.",
+    "diagnostic_steps": [
+      "Check your internet connection and toggle WiFi off and on",
+      "Toggle Hardware Acceleration off in Spotify Desktop settings (Settings -> Show Advanced Settings)",
+      "Log out and log back in to refresh your streaming session token",
+      "Ensure Spotify is excluded from battery saver or background data restrictions on mobile"
+    ],
+    "keywords": ["pause", "pausing", "stutter", "buffer", "buffering", "stops", "skips", "sound", "wifi", "stream"]
+  },
+  {
+    "article_id": "ART_OFF_01",
+    "title": "Offline Listening & Managing Storage Cache",
+    "category": "Offline",
+    "intent": "OFFLINE_DOWNLOAD_SYNC",
+    "canonical_url": "https://support.spotify.com/article/listen-offline/",
+    "summary": "Rules for downloading playlists, maintaining offline storage, and clearing local application cache.",
+    "diagnostic_steps": [
+      "Verify you have an active Premium plan and have gone online within the last 30 days",
+      "Check available device storage (at least 1GB of free space recommended)",
+      "In the Spotify app, go to Settings -> Storage -> Clear Cache",
+      "Re-toggle the Download switch on your playlists over a stable WiFi connection"
+    ],
+    "keywords": ["offline", "download", "downloaded", "cache", "storage", "sync", "sd card", "30 days"]
+  },
+  {
+    "article_id": "ART_LIB_01",
+    "title": "Recovering Deleted Playlists & Library Management",
+    "category": "Library",
+    "intent": "PLAYLIST_LIBRARY_MGMT",
+    "canonical_url": "https://support.spotify.com/article/recover-playlists/",
+    "summary": "How to restore accidentally deleted playlists and troubleshoot missing saved songs.",
+    "diagnostic_steps": [
+      "Log in to your account page at spotify.com/account on a web browser",
+      "Select 'Recover playlists' from the left navigation menu",
+      "Find the deleted playlist and click 'Restore'",
+      "Restart your Spotify app to see the restored playlist in Your Library"
+    ],
+    "keywords": ["playlist", "playlists", "deleted", "restore", "recover", "disappeared", "missing songs", "library"]
+  },
+  {
+    "article_id": "ART_BUG_01",
+    "title": "Clean Reinstall of Spotify App",
+    "category": "Technical",
+    "intent": "APP_CRASH_TECHNICAL_BUG",
+    "canonical_url": "https://support.spotify.com/article/clean-reinstallation/",
+    "summary": "Standard operating procedure to eliminate corrupted configuration files causing crashes or freeze errors.",
+    "diagnostic_steps": [
+      "Completely uninstall Spotify from your device application manager",
+      "Delete residual application data (on Windows: %localappdata%\\Spotify and %appdata%\\Spotify)",
+      "Restart your computer or mobile device",
+      "Download and install the latest fresh version from spotify.com/download"
+    ],
+    "keywords": ["crash", "crashing", "freeze", "freezes", "error", "won't open", "corrupted", "reinstall", "bug"]
+  },
+  {
+    "article_id": "ART_DEV_01",
+    "title": "Connecting to Bluetooth, Alexa & External Speakers",
+    "category": "Connect",
+    "intent": "DEVICE_CONNECT_INTEGRATION",
+    "canonical_url": "https://support.spotify.com/article/spotify-connect/",
+    "summary": "Troubleshooting Spotify Connect, Bluetooth pairing, and smart home voice integrations.",
+    "diagnostic_steps": [
+      "Ensure both your device and speaker/smart device are connected to the exact same WiFi network",
+      "Unpair and re-pair Bluetooth connections on your phone/computer",
+      "In the Alexa / Google Home app, unlink Spotify Skill and re-link with your Spotify credentials",
+      "Restart both your playback device and your smart speaker or router"
+    ],
+    "keywords": ["bluetooth", "alexa", "connect", "speaker", "carplay", "android auto", "pair", "echo", "sonos"]
+  },
+  {
+    "article_id": "ART_CONT_01",
+    "title": "Music Availability, Regional Rights & Greyed Out Tracks",
+    "category": "Content",
+    "intent": "CONTENT_METADATA_AVAILABILITY",
+    "canonical_url": "https://support.spotify.com/article/music-availability/",
+    "summary": "Information regarding artist music rights, territorial availability, and catalog licensing updates.",
+    "diagnostic_steps": [
+      "Music availability is determined by rightsholders (record labels and artists) and varies by country",
+      "If an album is greyed out, licensing agreements in your region may have expired or changed",
+      "Enable 'Show unplayable songs' in desktop settings to view track status",
+      "Check our Spotify Community New Releases board for catalog release announcements"
+    ],
+    "keywords": ["greyed out", "available", "unavailable", "rights", "licensing", "region", "album missing", "song missing"]
+  },
+  {
+    "article_id": "ART_ADS_01",
+    "title": "Ad Frequency & Reporting Inappropriate Ads",
+    "category": "Ads",
+    "intent": "ADS_PROMOTIONAL_ISSUES",
+    "canonical_url": "https://support.spotify.com/article/ad-feedback/",
+    "summary": "Policy regarding audio advertisement delivery, frequency caps, and commercial content reporting.",
+    "diagnostic_steps": [
+      "Spotify Free is supported by audio, video, and banner ads to provide free listening",
+      "To report an ad with inappropriate audio (e.g. sirens, jarring alarms), note the advertiser and time",
+      "Upgrade to Spotify Premium to enjoy completely ad-free uninterrupted streaming",
+      "If you are a paid Premium subscriber hearing ads, log out and log back in to refresh account status"
+    ],
+    "keywords": ["ad", "ads", "advert", "advertisement", "commercial", "siren", "alarm", "free account", "ad free"]
+  },
+  {
+    "article_id": "ART_UI_01",
+    "title": "Spotify Community Ideas & Feature Feedback",
+    "category": "Feedback",
+    "intent": "UI_FEEDBACK_FEATURE_REQUEST",
+    "canonical_url": "https://community.spotify.com/t5/Idea-Submissions/idb-p/ideas",
+    "summary": "How to submit, vote on, and track feature requests with Spotify's product and engineering teams.",
+    "diagnostic_steps": [
+      "Visit the Spotify Community Idea Submissions board at community.spotify.com",
+      "Search to see if another user has already proposed your feature or UI improvement",
+      "Add your vote and feedback to existing ideas to help our product team prioritize development",
+      "If not found, submit a new idea with use case details"
+    ],
+    "keywords": ["feature", "idea", "bring back", "feedback", "update", "ui", "design", "layout", "suggestion"]
+  }
+]

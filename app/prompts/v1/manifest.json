@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "timestamp": "2026-09-20T17:38:33.611540+00:00",
+  "version_checksum": "beccc1208f04b4ad3037a0428cdc355b450a18e046580d420c39f09ee910d536",
+  "template_count": 4,
+  "templates": {
+    "citation_prompt.md": "ac7ccee0241255d0b3cdf30e47ebe8519aa2933a19968113bd6b092b542695e7",
+    "guardrail_prompt.md": "db8edd81d283b0524ed8000a258aa7d5ba8df0beaed01b1bef840f86cf61505b",
+    "resolver_prompt.md": "5efa049af88c28fa0924dff3aa9bc55153efdaf78ffa9ecf5e7d520cff036b89",
+    "system_prompt.md": "1ced4686bd7943ad4a81ab90b268fd51326c8c982e8aa650182a07017997be19"
+  }
+}
