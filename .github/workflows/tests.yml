@@ -38,17 +38,6 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
 
-      - name: Run Stage 6A Performance Benchmark
+      - name: Run Production Smoke Test
         run: |
-          python scripts/benchmark_stage6a.py
-
-      - name: Upload Benchmark Artifacts
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: stage6a-benchmark-artifacts
-          path: |
-            metrics/stage6a_benchmark.json
-            report/stage6a_benchmark.md
-            metrics/pipeline_metrics.json
-            metrics/latency_metrics.json
+          python scripts/smoke_test.py
